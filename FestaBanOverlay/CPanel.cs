@@ -86,5 +86,49 @@ namespace FestaGameOverlay
             Program.B.Score = ScoreB.Text;
             Program.OpenedOverlay?.UpdateScoreBox();
         }
+
+        private void PlayerAP_Click(object sender, EventArgs e)
+        {
+            bool success = int.TryParse(Program.A.Score, out int score);
+
+            if (success == true)
+            {
+                score += 1;
+                ScoreA.Text = score.ToString();
+            }
+        }
+
+        private void PlayerAM_Click(object sender, EventArgs e)
+        {
+            bool success = int.TryParse(Program.A.Score, out int score);
+
+            if (success == true)
+            {
+                score -= 1;
+                ScoreA.Text = score.ToString();
+            }
+        }
+
+        private void PlayerBP_Click(object sender, EventArgs e)
+        {
+            bool success = int.TryParse(Program.B.Score, out int score);
+
+            if (success == true)
+            {
+                score += 1;
+                ScoreB.Text = score.ToString();
+            }
+        }
+
+        private void PlayerBM_Click(object sender, EventArgs e)
+        {
+            bool success = int.TryParse(Program.B.Score, out int score);
+
+            if (success == true)
+            {
+                score -= 1;
+                ScoreB.Text = score.ToString();
+            }
+        }
     }
 }

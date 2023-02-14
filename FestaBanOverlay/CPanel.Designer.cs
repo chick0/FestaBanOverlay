@@ -48,6 +48,10 @@ namespace FestaGameOverlay
             this.BanModeCheckBox = new System.Windows.Forms.CheckBox();
             this.ScoreA = new System.Windows.Forms.TextBox();
             this.ScoreB = new System.Windows.Forms.TextBox();
+            this.PlayerAP = new System.Windows.Forms.Button();
+            this.PlayerAM = new System.Windows.Forms.Button();
+            this.PlayerBM = new System.Windows.Forms.Button();
+            this.PlayerBP = new System.Windows.Forms.Button();
             this.PanelA.SuspendLayout();
             this.PanelB.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +113,7 @@ namespace FestaGameOverlay
             this.PanelA.Controls.Add(this.PlayerA4B);
             this.PanelA.Controls.Add(this.PlayerA6B);
             this.PanelA.Controls.Add(this.PlayerA5B);
-            this.PanelA.Location = new System.Drawing.Point(411, 15);
+            this.PanelA.Location = new System.Drawing.Point(443, 15);
             this.PanelA.Name = "PanelA";
             this.PanelA.Size = new System.Drawing.Size(408, 44);
             this.PanelA.TabIndex = 39;
@@ -180,7 +184,7 @@ namespace FestaGameOverlay
             this.PanelB.Controls.Add(this.PlayerB6B);
             this.PanelB.Controls.Add(this.PlayerB5B);
             this.PanelB.Controls.Add(this.PlayerB4B);
-            this.PanelB.Location = new System.Drawing.Point(411, 79);
+            this.PanelB.Location = new System.Drawing.Point(443, 79);
             this.PanelB.Name = "PanelB";
             this.PanelB.Size = new System.Drawing.Size(408, 44);
             this.PanelB.TabIndex = 40;
@@ -237,7 +241,7 @@ namespace FestaGameOverlay
             // 
             this.PlayerBX.AutoSize = true;
             this.PlayerBX.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PlayerBX.Location = new System.Drawing.Point(740, 79);
+            this.PlayerBX.Location = new System.Drawing.Point(772, 79);
             this.PlayerBX.Name = "PlayerBX";
             this.PlayerBX.Size = new System.Drawing.Size(55, 44);
             this.PlayerBX.TabIndex = 43;
@@ -260,9 +264,9 @@ namespace FestaGameOverlay
             // ScoreA
             // 
             this.ScoreA.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ScoreA.Location = new System.Drawing.Point(314, 22);
+            this.ScoreA.Location = new System.Drawing.Point(386, 21);
             this.ScoreA.Name = "ScoreA";
-            this.ScoreA.Size = new System.Drawing.Size(71, 31);
+            this.ScoreA.Size = new System.Drawing.Size(47, 31);
             this.ScoreA.TabIndex = 46;
             this.ScoreA.Text = "0";
             this.ScoreA.TextChanged += new System.EventHandler(this.ScoreA_TextChanged);
@@ -270,19 +274,67 @@ namespace FestaGameOverlay
             // ScoreB
             // 
             this.ScoreB.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ScoreB.Location = new System.Drawing.Point(314, 85);
+            this.ScoreB.Location = new System.Drawing.Point(386, 85);
             this.ScoreB.Name = "ScoreB";
-            this.ScoreB.Size = new System.Drawing.Size(71, 31);
+            this.ScoreB.Size = new System.Drawing.Size(47, 31);
             this.ScoreB.TabIndex = 47;
             this.ScoreB.Text = "0";
             this.ScoreB.TextChanged += new System.EventHandler(this.ScoreB_TextChanged);
+            // 
+            // PlayerAP
+            // 
+            this.PlayerAP.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerAP.Location = new System.Drawing.Point(314, 22);
+            this.PlayerAP.Name = "PlayerAP";
+            this.PlayerAP.Size = new System.Drawing.Size(30, 30);
+            this.PlayerAP.TabIndex = 48;
+            this.PlayerAP.Text = "+";
+            this.PlayerAP.UseVisualStyleBackColor = true;
+            this.PlayerAP.Click += new System.EventHandler(this.PlayerAP_Click);
+            // 
+            // PlayerAM
+            // 
+            this.PlayerAM.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerAM.Location = new System.Drawing.Point(350, 22);
+            this.PlayerAM.Name = "PlayerAM";
+            this.PlayerAM.Size = new System.Drawing.Size(30, 30);
+            this.PlayerAM.TabIndex = 49;
+            this.PlayerAM.Text = "-";
+            this.PlayerAM.UseVisualStyleBackColor = true;
+            this.PlayerAM.Click += new System.EventHandler(this.PlayerAM_Click);
+            // 
+            // PlayerBM
+            // 
+            this.PlayerBM.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerBM.Location = new System.Drawing.Point(350, 85);
+            this.PlayerBM.Name = "PlayerBM";
+            this.PlayerBM.Size = new System.Drawing.Size(30, 30);
+            this.PlayerBM.TabIndex = 51;
+            this.PlayerBM.Text = "-";
+            this.PlayerBM.UseVisualStyleBackColor = true;
+            this.PlayerBM.Click += new System.EventHandler(this.PlayerBM_Click);
+            // 
+            // PlayerBP
+            // 
+            this.PlayerBP.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerBP.Location = new System.Drawing.Point(314, 85);
+            this.PlayerBP.Name = "PlayerBP";
+            this.PlayerBP.Size = new System.Drawing.Size(30, 30);
+            this.PlayerBP.TabIndex = 50;
+            this.PlayerBP.Text = "+";
+            this.PlayerBP.UseVisualStyleBackColor = true;
+            this.PlayerBP.Click += new System.EventHandler(this.PlayerBP_Click);
             // 
             // CPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(832, 190);
+            this.ClientSize = new System.Drawing.Size(870, 192);
+            this.Controls.Add(this.PlayerBM);
+            this.Controls.Add(this.PlayerBP);
+            this.Controls.Add(this.PlayerAM);
+            this.Controls.Add(this.PlayerAP);
             this.Controls.Add(this.ScoreB);
             this.Controls.Add(this.ScoreA);
             this.Controls.Add(this.BanModeCheckBox);
@@ -329,5 +381,9 @@ namespace FestaGameOverlay
         private CheckBox BanModeCheckBox;
         private TextBox ScoreA;
         private TextBox ScoreB;
+        private Button PlayerAP;
+        private Button PlayerAM;
+        private Button PlayerBM;
+        private Button PlayerBP;
     }
 }
