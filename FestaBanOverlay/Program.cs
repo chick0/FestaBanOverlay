@@ -5,11 +5,13 @@ namespace FestaBanOverlay
     internal class Player
     {
         public string Name;
+        public string Score;
         public string? SelectButton;
 
         public Player()
         {
             Name = "";
+            Score = "0";
             SelectButton = null;
         }
     }

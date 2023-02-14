@@ -72,7 +72,19 @@ namespace FestaGameOverlay
 
         private void CheckedChanged(object sender, EventArgs e)
         {
-            Program.OpenedOverlay?.UpdateKeyImage((RadioButton) sender);
+            Program.OpenedOverlay?.UpdateKeyImage((RadioButton)sender);
+        }
+
+        private void ScoreA_TextChanged(object sender, EventArgs e)
+        {
+            Program.A.Score = ScoreA.Text;
+            Program.OpenedOverlay?.UpdateScoreBox();
+        }
+
+        private void ScoreB_TextChanged(object sender, EventArgs e)
+        {
+            Program.B.Score = ScoreB.Text;
+            Program.OpenedOverlay?.UpdateScoreBox();
         }
     }
 }

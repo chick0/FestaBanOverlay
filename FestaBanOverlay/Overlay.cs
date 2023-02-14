@@ -1,5 +1,3 @@
-using FestaGameOverlay;
-
 namespace FestaBanOverlay
 {
     public partial class Overlay : Form
@@ -9,8 +7,11 @@ namespace FestaBanOverlay
             InitializeComponent();
 
             // Set Font
-            PlayerA.Font = Program.fontManager.ToFont(2, 25f);
-            PlayerB.Font = Program.fontManager.ToFont(2, 25f);
+            PlayerA.Font = Program.fontManager.ToFont(2, 45f);
+            PlayerB.Font = Program.fontManager.ToFont(2, 45f);
+            
+            ScoreA.Font = Program.fontManager.ToFont(2, 45f);
+            ScoreB.Font = Program.fontManager.ToFont(2, 45f);
 
             // Set Parent (A)
             ButtonA.Parent = PlateA;
@@ -25,16 +26,17 @@ namespace FestaBanOverlay
             ButtonB.SizeMode = PictureBoxSizeMode.Zoom;
 
             // Set Button Location
-            ButtonA.Location = new(10, 10);
-            ButtonB.Location = new(10, 10);
+            ButtonA.Location = new(15, 15);
+            ButtonB.Location = new(15, 15);
 
             UpdateBanIconLocation();
             UpdateNameBox();
+            UpdateScoreBox();
         }
 
         public void UpdateBanIconLocation()
         {
-            Point banIconLocation = Program.IsBanMode ? (new(0, 0)) : (new(0, 120));
+            Point banIconLocation = Program.IsBanMode ? (new(35, 35)) : (new(0, 200));
             BanA.Location = banIconLocation;
             BanB.Location = banIconLocation;
         }
@@ -45,19 +47,19 @@ namespace FestaBanOverlay
             PlayerB.Text = Program.B.Name;
         }
 
+        public void UpdateScoreBox()
+        {
+            ScoreA.Text = Program.A.Score;
+            ScoreB.Text = Program.B.Score;
+        }
+
         private Image? GetKeyImage(string key)
         {
-            if (key == "4B")
-            {
-                return Properties.Resources._4B;
-            }
-
-            if (key == "5B")
-            {
-                return Properties.Resources._5B;
-            }
-
-            return key == "6B" ? Properties.Resources._6B : key == "8B" ? Properties.Resources._8B : (Image?)null;
+            return key == "4B"
+                ? Properties.Resources._4B
+                : key == "5B"
+                ? Properties.Resources._5B
+                : key == "6B" ? Properties.Resources._6B : key == "8B" ? Properties.Resources._8B : (Image?)null;
         }
 
         public void UpdateKeyImage(RadioButton button)
@@ -81,7 +83,7 @@ namespace FestaBanOverlay
 
         public void InitKeyImage(RadioButton[] buttons)
         {
-            for(int index = 0; index < buttons.Length; index++)
+            for (int index = 0; index < buttons.Length; index++)
             {
                 RadioButton button = buttons[index];
                 UpdateKeyImage(button);

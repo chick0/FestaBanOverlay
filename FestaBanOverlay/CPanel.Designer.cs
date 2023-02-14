@@ -46,6 +46,8 @@ namespace FestaGameOverlay
             this.PlayerB4B = new System.Windows.Forms.RadioButton();
             this.PlayerBX = new System.Windows.Forms.RadioButton();
             this.BanModeCheckBox = new System.Windows.Forms.CheckBox();
+            this.ScoreA = new System.Windows.Forms.TextBox();
+            this.ScoreB = new System.Windows.Forms.TextBox();
             this.PanelA.SuspendLayout();
             this.PanelB.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +109,7 @@ namespace FestaGameOverlay
             this.PanelA.Controls.Add(this.PlayerA4B);
             this.PanelA.Controls.Add(this.PlayerA6B);
             this.PanelA.Controls.Add(this.PlayerA5B);
-            this.PanelA.Location = new System.Drawing.Point(337, 15);
+            this.PanelA.Location = new System.Drawing.Point(411, 15);
             this.PanelA.Name = "PanelA";
             this.PanelA.Size = new System.Drawing.Size(408, 44);
             this.PanelA.TabIndex = 39;
@@ -178,7 +180,7 @@ namespace FestaGameOverlay
             this.PanelB.Controls.Add(this.PlayerB6B);
             this.PanelB.Controls.Add(this.PlayerB5B);
             this.PanelB.Controls.Add(this.PlayerB4B);
-            this.PanelB.Location = new System.Drawing.Point(337, 79);
+            this.PanelB.Location = new System.Drawing.Point(411, 79);
             this.PanelB.Name = "PanelB";
             this.PanelB.Size = new System.Drawing.Size(408, 44);
             this.PanelB.TabIndex = 40;
@@ -235,7 +237,7 @@ namespace FestaGameOverlay
             // 
             this.PlayerBX.AutoSize = true;
             this.PlayerBX.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PlayerBX.Location = new System.Drawing.Point(666, 79);
+            this.PlayerBX.Location = new System.Drawing.Point(740, 79);
             this.PlayerBX.Name = "PlayerBX";
             this.PlayerBX.Size = new System.Drawing.Size(55, 44);
             this.PlayerBX.TabIndex = 43;
@@ -255,12 +257,34 @@ namespace FestaGameOverlay
             this.BanModeCheckBox.UseVisualStyleBackColor = true;
             this.BanModeCheckBox.CheckedChanged += new System.EventHandler(this.BanModeCheckBox_CheckedChanged);
             // 
+            // ScoreA
+            // 
+            this.ScoreA.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ScoreA.Location = new System.Drawing.Point(314, 22);
+            this.ScoreA.Name = "ScoreA";
+            this.ScoreA.Size = new System.Drawing.Size(71, 31);
+            this.ScoreA.TabIndex = 46;
+            this.ScoreA.Text = "0";
+            this.ScoreA.TextChanged += new System.EventHandler(this.ScoreA_TextChanged);
+            // 
+            // ScoreB
+            // 
+            this.ScoreB.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ScoreB.Location = new System.Drawing.Point(314, 85);
+            this.ScoreB.Name = "ScoreB";
+            this.ScoreB.Size = new System.Drawing.Size(71, 31);
+            this.ScoreB.TabIndex = 47;
+            this.ScoreB.Text = "0";
+            this.ScoreB.TextChanged += new System.EventHandler(this.ScoreB_TextChanged);
+            // 
             // CPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(753, 190);
+            this.ClientSize = new System.Drawing.Size(832, 190);
+            this.Controls.Add(this.ScoreB);
+            this.Controls.Add(this.ScoreA);
             this.Controls.Add(this.BanModeCheckBox);
             this.Controls.Add(this.PlayerBX);
             this.Controls.Add(this.PanelB);
@@ -303,5 +327,7 @@ namespace FestaGameOverlay
         private RadioButton PlayerAX;
         private RadioButton PlayerBX;
         private CheckBox BanModeCheckBox;
+        private TextBox ScoreA;
+        private TextBox ScoreB;
     }
 }

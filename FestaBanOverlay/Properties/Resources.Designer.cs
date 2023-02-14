@@ -113,26 +113,6 @@ namespace FestaBanOverlay.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        public static System.Drawing.Bitmap BLUE_Name {
-            get {
-                object obj = ResourceManager.GetObject("BLUE_Name", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        public static System.Drawing.Bitmap BLUE_Plate {
-            get {
-                object obj = ResourceManager.GetObject("BLUE_Plate", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         public static System.Drawing.Bitmap Mid_Timer {
             get {
                 object obj = ResourceManager.GetObject("Mid_Timer", resourceCulture);
@@ -176,26 +156,6 @@ namespace FestaBanOverlay.Properties {
         public static System.Drawing.Bitmap RED_BAN {
             get {
                 object obj = ResourceManager.GetObject("RED_BAN", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        public static System.Drawing.Bitmap RED_Name {
-            get {
-                object obj = ResourceManager.GetObject("RED_Name", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        public static System.Drawing.Bitmap RED_Plate {
-            get {
-                object obj = ResourceManager.GetObject("RED_Plate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
