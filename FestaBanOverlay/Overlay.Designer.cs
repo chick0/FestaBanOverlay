@@ -105,7 +105,7 @@
             // PlayerB
             // 
             this.PlayerB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(0)))), ((int)(((byte)(42)))));
-            this.PlayerB.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerB.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PlayerB.ForeColor = System.Drawing.Color.White;
             this.PlayerB.Location = new System.Drawing.Point(1063, 0);
             this.PlayerB.Margin = new System.Windows.Forms.Padding(0);
