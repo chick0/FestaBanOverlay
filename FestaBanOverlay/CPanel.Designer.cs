@@ -1,0 +1,307 @@
+namespace FestaGameOverlay
+{
+    partial class CPanel
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label2 = new System.Windows.Forms.Label();
+            this.PlayerA = new System.Windows.Forms.TextBox();
+            this.PlayerB = new System.Windows.Forms.TextBox();
+            this.DoCollect = new System.Windows.Forms.Button();
+            this.OpenOverlay = new System.Windows.Forms.Button();
+            this.PanelA = new System.Windows.Forms.Panel();
+            this.PlayerAX = new System.Windows.Forms.RadioButton();
+            this.PlayerA8B = new System.Windows.Forms.RadioButton();
+            this.PlayerA4B = new System.Windows.Forms.RadioButton();
+            this.PlayerA6B = new System.Windows.Forms.RadioButton();
+            this.PlayerA5B = new System.Windows.Forms.RadioButton();
+            this.PanelB = new System.Windows.Forms.Panel();
+            this.PlayerB8B = new System.Windows.Forms.RadioButton();
+            this.PlayerB6B = new System.Windows.Forms.RadioButton();
+            this.PlayerB5B = new System.Windows.Forms.RadioButton();
+            this.PlayerB4B = new System.Windows.Forms.RadioButton();
+            this.PlayerBX = new System.Windows.Forms.RadioButton();
+            this.BanModeCheckBox = new System.Windows.Forms.CheckBox();
+            this.PanelA.SuspendLayout();
+            this.PanelB.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Pretendard", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 50);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "선수";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // PlayerA
+            // 
+            this.PlayerA.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerA.Location = new System.Drawing.Point(135, 22);
+            this.PlayerA.Name = "PlayerA";
+            this.PlayerA.Size = new System.Drawing.Size(173, 31);
+            this.PlayerA.TabIndex = 7;
+            this.PlayerA.TextChanged += new System.EventHandler(this.PlayerA_TextChanged);
+            // 
+            // PlayerB
+            // 
+            this.PlayerB.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerB.Location = new System.Drawing.Point(135, 85);
+            this.PlayerB.Name = "PlayerB";
+            this.PlayerB.Size = new System.Drawing.Size(173, 31);
+            this.PlayerB.TabIndex = 8;
+            this.PlayerB.TextChanged += new System.EventHandler(this.PlayerB_TextChanged);
+            // 
+            // DoCollect
+            // 
+            this.DoCollect.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DoCollect.Location = new System.Drawing.Point(12, 149);
+            this.DoCollect.Name = "DoCollect";
+            this.DoCollect.Size = new System.Drawing.Size(108, 31);
+            this.DoCollect.TabIndex = 29;
+            this.DoCollect.Text = "메모리 정리";
+            this.DoCollect.UseVisualStyleBackColor = true;
+            this.DoCollect.Click += new System.EventHandler(this.DoCollect_Click);
+            // 
+            // OpenOverlay
+            // 
+            this.OpenOverlay.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OpenOverlay.Location = new System.Drawing.Point(135, 139);
+            this.OpenOverlay.Name = "OpenOverlay";
+            this.OpenOverlay.Size = new System.Drawing.Size(210, 41);
+            this.OpenOverlay.TabIndex = 30;
+            this.OpenOverlay.Text = "오버레이 실행";
+            this.OpenOverlay.UseVisualStyleBackColor = true;
+            this.OpenOverlay.Click += new System.EventHandler(this.OpenOverlay_Click);
+            // 
+            // PanelA
+            // 
+            this.PanelA.Controls.Add(this.PlayerAX);
+            this.PanelA.Controls.Add(this.PlayerA8B);
+            this.PanelA.Controls.Add(this.PlayerA4B);
+            this.PanelA.Controls.Add(this.PlayerA6B);
+            this.PanelA.Controls.Add(this.PlayerA5B);
+            this.PanelA.Location = new System.Drawing.Point(337, 15);
+            this.PanelA.Name = "PanelA";
+            this.PanelA.Size = new System.Drawing.Size(408, 44);
+            this.PanelA.TabIndex = 39;
+            // 
+            // PlayerAX
+            // 
+            this.PlayerAX.AutoSize = true;
+            this.PlayerAX.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerAX.Location = new System.Drawing.Point(329, 0);
+            this.PlayerAX.Name = "PlayerAX";
+            this.PlayerAX.Size = new System.Drawing.Size(55, 44);
+            this.PlayerAX.TabIndex = 45;
+            this.PlayerAX.TabStop = true;
+            this.PlayerAX.Text = "X";
+            this.PlayerAX.UseVisualStyleBackColor = true;
+            // 
+            // PlayerA8B
+            // 
+            this.PlayerA8B.AutoSize = true;
+            this.PlayerA8B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerA8B.Location = new System.Drawing.Point(247, 0);
+            this.PlayerA8B.Name = "PlayerA8B";
+            this.PlayerA8B.Size = new System.Drawing.Size(76, 44);
+            this.PlayerA8B.TabIndex = 44;
+            this.PlayerA8B.TabStop = true;
+            this.PlayerA8B.Text = "8B";
+            this.PlayerA8B.UseVisualStyleBackColor = true;
+            // 
+            // PlayerA4B
+            // 
+            this.PlayerA4B.AutoSize = true;
+            this.PlayerA4B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerA4B.Location = new System.Drawing.Point(0, 0);
+            this.PlayerA4B.Name = "PlayerA4B";
+            this.PlayerA4B.Size = new System.Drawing.Size(77, 44);
+            this.PlayerA4B.TabIndex = 41;
+            this.PlayerA4B.TabStop = true;
+            this.PlayerA4B.Text = "4B";
+            this.PlayerA4B.UseVisualStyleBackColor = true;
+            // 
+            // PlayerA6B
+            // 
+            this.PlayerA6B.AutoSize = true;
+            this.PlayerA6B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerA6B.Location = new System.Drawing.Point(165, 0);
+            this.PlayerA6B.Name = "PlayerA6B";
+            this.PlayerA6B.Size = new System.Drawing.Size(76, 44);
+            this.PlayerA6B.TabIndex = 43;
+            this.PlayerA6B.TabStop = true;
+            this.PlayerA6B.Text = "6B";
+            this.PlayerA6B.UseVisualStyleBackColor = true;
+            // 
+            // PlayerA5B
+            // 
+            this.PlayerA5B.AutoSize = true;
+            this.PlayerA5B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerA5B.Location = new System.Drawing.Point(83, 0);
+            this.PlayerA5B.Name = "PlayerA5B";
+            this.PlayerA5B.Size = new System.Drawing.Size(76, 44);
+            this.PlayerA5B.TabIndex = 42;
+            this.PlayerA5B.TabStop = true;
+            this.PlayerA5B.Text = "5B";
+            this.PlayerA5B.UseVisualStyleBackColor = true;
+            // 
+            // PanelB
+            // 
+            this.PanelB.Controls.Add(this.PlayerB8B);
+            this.PanelB.Controls.Add(this.PlayerB6B);
+            this.PanelB.Controls.Add(this.PlayerB5B);
+            this.PanelB.Controls.Add(this.PlayerB4B);
+            this.PanelB.Location = new System.Drawing.Point(337, 79);
+            this.PanelB.Name = "PanelB";
+            this.PanelB.Size = new System.Drawing.Size(408, 44);
+            this.PanelB.TabIndex = 40;
+            // 
+            // PlayerB8B
+            // 
+            this.PlayerB8B.AutoSize = true;
+            this.PlayerB8B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerB8B.Location = new System.Drawing.Point(247, 0);
+            this.PlayerB8B.Name = "PlayerB8B";
+            this.PlayerB8B.Size = new System.Drawing.Size(76, 44);
+            this.PlayerB8B.TabIndex = 42;
+            this.PlayerB8B.TabStop = true;
+            this.PlayerB8B.Text = "8B";
+            this.PlayerB8B.UseVisualStyleBackColor = true;
+            // 
+            // PlayerB6B
+            // 
+            this.PlayerB6B.AutoSize = true;
+            this.PlayerB6B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerB6B.Location = new System.Drawing.Point(165, 0);
+            this.PlayerB6B.Name = "PlayerB6B";
+            this.PlayerB6B.Size = new System.Drawing.Size(76, 44);
+            this.PlayerB6B.TabIndex = 41;
+            this.PlayerB6B.TabStop = true;
+            this.PlayerB6B.Text = "6B";
+            this.PlayerB6B.UseVisualStyleBackColor = true;
+            // 
+            // PlayerB5B
+            // 
+            this.PlayerB5B.AutoSize = true;
+            this.PlayerB5B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerB5B.Location = new System.Drawing.Point(83, 0);
+            this.PlayerB5B.Name = "PlayerB5B";
+            this.PlayerB5B.Size = new System.Drawing.Size(76, 44);
+            this.PlayerB5B.TabIndex = 40;
+            this.PlayerB5B.TabStop = true;
+            this.PlayerB5B.Text = "5B";
+            this.PlayerB5B.UseVisualStyleBackColor = true;
+            // 
+            // PlayerB4B
+            // 
+            this.PlayerB4B.AutoSize = true;
+            this.PlayerB4B.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerB4B.Location = new System.Drawing.Point(0, 0);
+            this.PlayerB4B.Name = "PlayerB4B";
+            this.PlayerB4B.Size = new System.Drawing.Size(77, 44);
+            this.PlayerB4B.TabIndex = 39;
+            this.PlayerB4B.TabStop = true;
+            this.PlayerB4B.Text = "4B";
+            this.PlayerB4B.UseVisualStyleBackColor = true;
+            // 
+            // PlayerBX
+            // 
+            this.PlayerBX.AutoSize = true;
+            this.PlayerBX.Font = new System.Drawing.Font("Pretendard Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlayerBX.Location = new System.Drawing.Point(666, 79);
+            this.PlayerBX.Name = "PlayerBX";
+            this.PlayerBX.Size = new System.Drawing.Size(55, 44);
+            this.PlayerBX.TabIndex = 43;
+            this.PlayerBX.TabStop = true;
+            this.PlayerBX.Text = "X";
+            this.PlayerBX.UseVisualStyleBackColor = true;
+            // 
+            // BanModeCheckBox
+            // 
+            this.BanModeCheckBox.AutoSize = true;
+            this.BanModeCheckBox.Font = new System.Drawing.Font("Pretendard Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BanModeCheckBox.Location = new System.Drawing.Point(375, 146);
+            this.BanModeCheckBox.Name = "BanModeCheckBox";
+            this.BanModeCheckBox.Size = new System.Drawing.Size(345, 28);
+            this.BanModeCheckBox.TabIndex = 45;
+            this.BanModeCheckBox.Text = "벤 픽 모드 (선택 키위에 X를 표시합니다.)";
+            this.BanModeCheckBox.UseVisualStyleBackColor = true;
+            this.BanModeCheckBox.CheckedChanged += new System.EventHandler(this.BanModeCheckBox_CheckedChanged);
+            // 
+            // CPanel
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(753, 190);
+            this.Controls.Add(this.BanModeCheckBox);
+            this.Controls.Add(this.PlayerBX);
+            this.Controls.Add(this.PanelB);
+            this.Controls.Add(this.PanelA);
+            this.Controls.Add(this.OpenOverlay);
+            this.Controls.Add(this.DoCollect);
+            this.Controls.Add(this.PlayerB);
+            this.Controls.Add(this.PlayerA);
+            this.Controls.Add(this.label2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "CPanel";
+            this.ShowIcon = false;
+            this.Text = "오버레이 제어판";
+            this.PanelA.ResumeLayout(false);
+            this.PanelA.PerformLayout();
+            this.PanelB.ResumeLayout(false);
+            this.PanelB.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private Label label2;
+        private TextBox PlayerA;
+        private TextBox PlayerB;
+        private Button DoCollect;
+        private Button OpenOverlay;
+        private Panel PanelA;
+        private Panel PanelB;
+        private RadioButton PlayerA8B;
+        private RadioButton PlayerA4B;
+        private RadioButton PlayerA6B;
+        private RadioButton PlayerA5B;
+        private RadioButton PlayerB8B;
+        private RadioButton PlayerB6B;
+        private RadioButton PlayerB5B;
+        private RadioButton PlayerB4B;
+        private RadioButton PlayerAX;
+        private RadioButton PlayerBX;
+        private CheckBox BanModeCheckBox;
+    }
+}
