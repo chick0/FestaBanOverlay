@@ -148,7 +148,7 @@
             // ScoreA
             // 
             this.ScoreA.BackColor = System.Drawing.Color.White;
-            this.ScoreA.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ScoreA.Font = new System.Drawing.Font("Pretendard Black", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ScoreA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(169)))), ((int)(((byte)(194)))));
             this.ScoreA.Location = new System.Drawing.Point(600, 0);
             this.ScoreA.Margin = new System.Windows.Forms.Padding(0);
@@ -161,7 +161,7 @@
             // ScoreB
             // 
             this.ScoreB.BackColor = System.Drawing.Color.White;
-            this.ScoreB.Font = new System.Drawing.Font("Pretendard Light", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ScoreB.Font = new System.Drawing.Font("Pretendard Black", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ScoreB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(0)))), ((int)(((byte)(42)))));
             this.ScoreB.Location = new System.Drawing.Point(928, 0);
             this.ScoreB.Margin = new System.Windows.Forms.Padding(0);

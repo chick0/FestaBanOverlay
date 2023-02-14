@@ -7,11 +7,11 @@ namespace FestaBanOverlay
             InitializeComponent();
 
             // Set Font
-            PlayerA.Font = Program.fontManager.ToFont(2, 45f);
-            PlayerB.Font = Program.fontManager.ToFont(2, 45f);
-            
-            ScoreA.Font = Program.fontManager.ToFont(2, 45f);
-            ScoreB.Font = Program.fontManager.ToFont(2, 45f);
+            PlayerA.Font = Program.fontManager.ToFont(FontId.Light, 45f);
+            PlayerB.Font = Program.fontManager.ToFont(FontId.Light, 45f);
+
+            ScoreA.Font = Program.fontManager.ToFont(FontId.Black, 100f);
+            ScoreB.Font = Program.fontManager.ToFont(FontId.Black, 100f);
 
             // Set Parent (A)
             ButtonA.Parent = PlateA;

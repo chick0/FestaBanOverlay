@@ -2,6 +2,13 @@ using System.Drawing.Text;
 
 namespace FestaBanOverlay
 {
+    internal enum FontId
+    {
+        Default = 0,
+        Light = 1,
+        Black = 2
+    }
+
     internal class FontManager
     {
         public PrivateFontCollection pfc = new();
@@ -19,14 +26,28 @@ namespace FestaBanOverlay
             pfc.AddFontFile(Light);
         }
 
-        public Font ToFont(int fontId, float fontSize)
+        private FontFamily GetFont(FontId fontId)
+        {
+            FontFamily font = pfc.Families[0];
+            string fontName = fontId == FontId.Default ? "Pretendard" : fontId == FontId.Light ? "Pretendard Light" : "Pretendard Black";
+
+            foreach (FontFamily tmp in pfc.Families)
+            {
+                if (fontName == tmp.Name)
+                {
+                    font = tmp;
+                }
+            }
+
+            return font;
+        }
+
+        public Font ToFont(FontId fontId, float fontSize)
         {
             return new Font(
-                pfc.Families[fontId],
+                GetFont(fontId),
                 fontSize,
-                FontStyle.Regular,
-                GraphicsUnit.Point,
-                129
+                FontStyle.Regular
             );
         }
     }
