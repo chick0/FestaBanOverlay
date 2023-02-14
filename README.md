@@ -1,4 +1,4 @@
-# Festa Game Overlay
+# Festa Ban Overlay
 
 DJMAX GLORY FESTA 대회 진행용 오버레이
 
