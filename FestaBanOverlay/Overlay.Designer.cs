@@ -39,6 +39,8 @@
             this.BanB = new System.Windows.Forms.PictureBox();
             this.ScoreA = new System.Windows.Forms.Label();
             this.ScoreB = new System.Windows.Forms.Label();
+            this.EmptyLabel1 = new System.Windows.Forms.Label();
+            this.EmptyLabel2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PlateA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BanA)).BeginInit();
@@ -150,10 +152,10 @@
             this.ScoreA.BackColor = System.Drawing.Color.White;
             this.ScoreA.Font = new System.Drawing.Font("Pretendard Black", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ScoreA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(169)))), ((int)(((byte)(194)))));
-            this.ScoreA.Location = new System.Drawing.Point(600, 0);
+            this.ScoreA.Location = new System.Drawing.Point(615, 0);
             this.ScoreA.Margin = new System.Windows.Forms.Padding(0);
             this.ScoreA.Name = "ScoreA";
-            this.ScoreA.Size = new System.Drawing.Size(135, 200);
+            this.ScoreA.Size = new System.Drawing.Size(120, 200);
             this.ScoreA.TabIndex = 9;
             this.ScoreA.Text = "1";
             this.ScoreA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,19 +165,39 @@
             this.ScoreB.BackColor = System.Drawing.Color.White;
             this.ScoreB.Font = new System.Drawing.Font("Pretendard Black", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ScoreB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(0)))), ((int)(((byte)(42)))));
-            this.ScoreB.Location = new System.Drawing.Point(928, 0);
+            this.ScoreB.Location = new System.Drawing.Point(943, 0);
             this.ScoreB.Margin = new System.Windows.Forms.Padding(0);
             this.ScoreB.Name = "ScoreB";
-            this.ScoreB.Size = new System.Drawing.Size(135, 200);
+            this.ScoreB.Size = new System.Drawing.Size(120, 200);
             this.ScoreB.TabIndex = 10;
             this.ScoreB.Text = "3";
             this.ScoreB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EmptyLabel1
+            // 
+            this.EmptyLabel1.BackColor = System.Drawing.Color.White;
+            this.EmptyLabel1.Location = new System.Drawing.Point(600, 0);
+            this.EmptyLabel1.Margin = new System.Windows.Forms.Padding(0);
+            this.EmptyLabel1.Name = "EmptyLabel1";
+            this.EmptyLabel1.Size = new System.Drawing.Size(15, 200);
+            this.EmptyLabel1.TabIndex = 11;
+            // 
+            // EmptyLabel2
+            // 
+            this.EmptyLabel2.BackColor = System.Drawing.Color.White;
+            this.EmptyLabel2.Location = new System.Drawing.Point(928, 0);
+            this.EmptyLabel2.Margin = new System.Windows.Forms.Padding(0);
+            this.EmptyLabel2.Name = "EmptyLabel2";
+            this.EmptyLabel2.Size = new System.Drawing.Size(15, 200);
+            this.EmptyLabel2.TabIndex = 12;
             // 
             // Overlay
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1663, 200);
+            this.Controls.Add(this.EmptyLabel2);
+            this.Controls.Add(this.EmptyLabel1);
             this.Controls.Add(this.ScoreB);
             this.Controls.Add(this.ScoreA);
             this.Controls.Add(this.BanB);
@@ -216,5 +238,7 @@
         private PictureBox BanB;
         private Label ScoreA;
         private Label ScoreB;
+        private Label EmptyLabel1;
+        private Label EmptyLabel2;
     }
 }
