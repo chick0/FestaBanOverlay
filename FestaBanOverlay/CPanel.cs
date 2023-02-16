@@ -9,7 +9,6 @@ namespace FestaGameOverlay
             InitializeComponent();
 
             // Set Parent
-
             RadioButton[] PlayerAB = new RadioButton[] { PlayerA4B, PlayerA5B, PlayerA6B, PlayerA8B, PlayerAX };
             RadioButton[] PlayerBB = new RadioButton[] { PlayerB4B, PlayerB5B, PlayerB6B, PlayerB8B, PlayerBX };
 
@@ -28,6 +27,8 @@ namespace FestaGameOverlay
                 a.CheckedChanged += CheckedChanged;
                 b.CheckedChanged += CheckedChanged;
             }
+
+            UpdateTimerControlButton();
         }
 
         private void PlayerA_TextChanged(object sender, EventArgs e)
@@ -128,6 +129,40 @@ namespace FestaGameOverlay
             {
                 score -= 1;
                 ScoreB.Text = score.ToString();
+            }
+        }
+
+        private void ResetTimer_Click(object sender, EventArgs e)
+        {
+            Program.TimerEnabled = false;
+            UpdateTimerControlButton();
+
+            Program.TimeLeft = !int.TryParse(TimerInitValue.Text, out int ParsedValue) ? 60 : ParsedValue;
+        }
+
+        private void EnableTimer_Click(object sender, EventArgs e)
+        {
+            Program.TimerEnabled = true;
+            UpdateTimerControlButton();
+        }
+
+        private void DisableTimer_Click(object sender, EventArgs e)
+        {
+            Program.TimerEnabled = false;
+            UpdateTimerControlButton();
+        }
+
+        private void UpdateTimerControlButton()
+        {
+            if (Program.TimerEnabled == true)
+            {
+                EnableTimer.Hide();
+                DisableTimer.Show();
+            }
+            else
+            {
+                EnableTimer.Show();
+                DisableTimer.Hide();
             }
         }
     }

@@ -52,6 +52,11 @@ namespace FestaGameOverlay
             this.PlayerAM = new System.Windows.Forms.Button();
             this.PlayerBM = new System.Windows.Forms.Button();
             this.PlayerBP = new System.Windows.Forms.Button();
+            this.ResetTimer = new System.Windows.Forms.Button();
+            this.EnableTimer = new System.Windows.Forms.Button();
+            this.DisableTimer = new System.Windows.Forms.Button();
+            this.TimerInitValue = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.PanelA.SuspendLayout();
             this.PanelB.SuspendLayout();
             this.SuspendLayout();
@@ -87,7 +92,7 @@ namespace FestaGameOverlay
             // DoCollect
             // 
             this.DoCollect.Font = new System.Drawing.Font("Pretendard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DoCollect.Location = new System.Drawing.Point(12, 149);
+            this.DoCollect.Location = new System.Drawing.Point(12, 248);
             this.DoCollect.Name = "DoCollect";
             this.DoCollect.Size = new System.Drawing.Size(108, 31);
             this.DoCollect.TabIndex = 29;
@@ -98,9 +103,9 @@ namespace FestaGameOverlay
             // OpenOverlay
             // 
             this.OpenOverlay.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OpenOverlay.Location = new System.Drawing.Point(135, 139);
+            this.OpenOverlay.Location = new System.Drawing.Point(135, 238);
             this.OpenOverlay.Name = "OpenOverlay";
-            this.OpenOverlay.Size = new System.Drawing.Size(210, 41);
+            this.OpenOverlay.Size = new System.Drawing.Size(209, 41);
             this.OpenOverlay.TabIndex = 30;
             this.OpenOverlay.Text = "오버레이 실행";
             this.OpenOverlay.UseVisualStyleBackColor = true;
@@ -253,7 +258,7 @@ namespace FestaGameOverlay
             // 
             this.BanModeCheckBox.AutoSize = true;
             this.BanModeCheckBox.Font = new System.Drawing.Font("Pretendard Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BanModeCheckBox.Location = new System.Drawing.Point(375, 146);
+            this.BanModeCheckBox.Location = new System.Drawing.Point(443, 132);
             this.BanModeCheckBox.Name = "BanModeCheckBox";
             this.BanModeCheckBox.Size = new System.Drawing.Size(345, 28);
             this.BanModeCheckBox.TabIndex = 45;
@@ -325,12 +330,74 @@ namespace FestaGameOverlay
             this.PlayerBP.UseVisualStyleBackColor = true;
             this.PlayerBP.Click += new System.EventHandler(this.PlayerBP_Click);
             // 
+            // ResetTimer
+            // 
+            this.ResetTimer.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetTimer.Location = new System.Drawing.Point(276, 171);
+            this.ResetTimer.Margin = new System.Windows.Forms.Padding(0);
+            this.ResetTimer.Name = "ResetTimer";
+            this.ResetTimer.Size = new System.Drawing.Size(157, 41);
+            this.ResetTimer.TabIndex = 52;
+            this.ResetTimer.Text = "타이머 초기화";
+            this.ResetTimer.UseVisualStyleBackColor = true;
+            this.ResetTimer.Click += new System.EventHandler(this.ResetTimer_Click);
+            // 
+            // EnableTimer
+            // 
+            this.EnableTimer.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.EnableTimer.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EnableTimer.Location = new System.Drawing.Point(457, 171);
+            this.EnableTimer.Margin = new System.Windows.Forms.Padding(0);
+            this.EnableTimer.Name = "EnableTimer";
+            this.EnableTimer.Size = new System.Drawing.Size(180, 41);
+            this.EnableTimer.TabIndex = 53;
+            this.EnableTimer.Text = "타이머 활성화";
+            this.EnableTimer.UseVisualStyleBackColor = false;
+            this.EnableTimer.Click += new System.EventHandler(this.EnableTimer_Click);
+            // 
+            // DisableTimer
+            // 
+            this.DisableTimer.BackColor = System.Drawing.Color.LightCoral;
+            this.DisableTimer.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DisableTimer.Location = new System.Drawing.Point(647, 171);
+            this.DisableTimer.Margin = new System.Windows.Forms.Padding(0);
+            this.DisableTimer.Name = "DisableTimer";
+            this.DisableTimer.Size = new System.Drawing.Size(180, 41);
+            this.DisableTimer.TabIndex = 54;
+            this.DisableTimer.Text = "타이머 비활성화";
+            this.DisableTimer.UseVisualStyleBackColor = false;
+            this.DisableTimer.Click += new System.EventHandler(this.DisableTimer_Click);
+            // 
+            // TimerInitValue
+            // 
+            this.TimerInitValue.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerInitValue.Location = new System.Drawing.Point(135, 176);
+            this.TimerInitValue.Name = "TimerInitValue";
+            this.TimerInitValue.Size = new System.Drawing.Size(66, 31);
+            this.TimerInitValue.TabIndex = 55;
+            this.TimerInitValue.Text = "60";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Pretendard", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 166);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 50);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "타이머";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // CPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(870, 192);
+            this.ClientSize = new System.Drawing.Size(870, 291);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TimerInitValue);
+            this.Controls.Add(this.DisableTimer);
+            this.Controls.Add(this.EnableTimer);
+            this.Controls.Add(this.ResetTimer);
             this.Controls.Add(this.PlayerBM);
             this.Controls.Add(this.PlayerBP);
             this.Controls.Add(this.PlayerAM);
@@ -384,5 +451,10 @@ namespace FestaGameOverlay
         private Button PlayerAM;
         private Button PlayerBM;
         private Button PlayerBP;
+        private Button ResetTimer;
+        private Button EnableTimer;
+        private Button DisableTimer;
+        private TextBox TimerInitValue;
+        private Label label1;
     }
 }

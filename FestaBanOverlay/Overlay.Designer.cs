@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PlateA = new System.Windows.Forms.PictureBox();
             this.ButtonA = new System.Windows.Forms.PictureBox();
             this.BanA = new System.Windows.Forms.PictureBox();
             this.PlayerA = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TimerBackground = new System.Windows.Forms.PictureBox();
             this.PlayerB = new System.Windows.Forms.Label();
             this.PlateB = new System.Windows.Forms.PictureBox();
             this.ButtonB = new System.Windows.Forms.PictureBox();
@@ -41,10 +42,12 @@
             this.ScoreB = new System.Windows.Forms.Label();
             this.EmptyLabel1 = new System.Windows.Forms.Label();
             this.EmptyLabel2 = new System.Windows.Forms.Label();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.TimeLeft = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PlateA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BanA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimerBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlateB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BanB)).BeginInit();
@@ -94,15 +97,15 @@
             this.PlayerA.Text = "Player A";
             this.PlayerA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // TimerBackground
             // 
-            this.pictureBox1.Image = global::FestaBanOverlay.Properties.Resources.Mid_Timer;
-            this.pictureBox1.Location = new System.Drawing.Point(735, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 200);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.TimerBackground.Image = global::FestaBanOverlay.Properties.Resources.Mid_Timer;
+            this.TimerBackground.Location = new System.Drawing.Point(735, 0);
+            this.TimerBackground.Margin = new System.Windows.Forms.Padding(0);
+            this.TimerBackground.Name = "TimerBackground";
+            this.TimerBackground.Size = new System.Drawing.Size(193, 200);
+            this.TimerBackground.TabIndex = 4;
+            this.TimerBackground.TabStop = false;
             // 
             // PlayerB
             // 
@@ -191,11 +194,29 @@
             this.EmptyLabel2.Size = new System.Drawing.Size(15, 200);
             this.EmptyLabel2.TabIndex = 12;
             // 
+            // Timer
+            // 
+            this.Timer.Enabled = true;
+            this.Timer.Interval = 1000;
+            // 
+            // TimeLeft
+            // 
+            this.TimeLeft.BackColor = System.Drawing.Color.Transparent;
+            this.TimeLeft.Font = new System.Drawing.Font("Pretendard Black", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimeLeft.ForeColor = System.Drawing.Color.White;
+            this.TimeLeft.Location = new System.Drawing.Point(750, 0);
+            this.TimeLeft.Name = "TimeLeft";
+            this.TimeLeft.Size = new System.Drawing.Size(178, 200);
+            this.TimeLeft.TabIndex = 13;
+            this.TimeLeft.Text = "60";
+            this.TimeLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Overlay
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1663, 200);
+            this.Controls.Add(this.TimeLeft);
             this.Controls.Add(this.EmptyLabel2);
             this.Controls.Add(this.EmptyLabel1);
             this.Controls.Add(this.ScoreB);
@@ -204,7 +225,7 @@
             this.Controls.Add(this.ButtonB);
             this.Controls.Add(this.PlateB);
             this.Controls.Add(this.PlayerB);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.TimerBackground);
             this.Controls.Add(this.PlayerA);
             this.Controls.Add(this.BanA);
             this.Controls.Add(this.ButtonA);
@@ -217,7 +238,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PlateA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BanA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimerBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlateB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BanB)).EndInit();
@@ -231,7 +252,7 @@
         private PictureBox ButtonA;
         private PictureBox BanA;
         private Label PlayerA;
-        private PictureBox pictureBox1;
+        private PictureBox TimerBackground;
         private Label PlayerB;
         private PictureBox PlateB;
         private PictureBox ButtonB;
@@ -240,5 +261,7 @@
         private Label ScoreB;
         private Label EmptyLabel1;
         private Label EmptyLabel2;
+        private System.Windows.Forms.Timer Timer;
+        private Label TimeLeft;
     }
 }

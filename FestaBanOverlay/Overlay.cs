@@ -29,6 +29,11 @@ namespace FestaBanOverlay
             ButtonA.Location = new(15, 15);
             ButtonB.Location = new(15, 15);
 
+            // Set Timer
+            TimeLeft.Location = new(15, 0);
+            TimeLeft.Parent = TimerBackground;
+            Timer.Tick += Timer_Tick;
+
             UpdateBanIconLocation();
             UpdateNameBox();
             UpdateScoreBox();
@@ -87,6 +92,24 @@ namespace FestaBanOverlay
             {
                 RadioButton button = buttons[index];
                 UpdateKeyImage(button);
+            }
+        }
+
+        private void Timer_Tick(object sender, EventArgs args)
+        {
+            if (!Program.TimerEnabled)
+            {
+                return;
+            }
+
+            if (Program.TimeLeft <= 0)
+            {
+                TimeLeft.Text = "";
+            }
+            else
+            {
+                Program.TimeLeft -= 1;
+                TimeLeft.Text = Program.TimeLeft.ToString();
             }
         }
     }
