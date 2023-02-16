@@ -347,7 +347,6 @@ namespace FestaGameOverlay
             this.Controls.Add(this.PlayerA);
             this.Controls.Add(this.label2);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "CPanel";
             this.ShowIcon = false;
             this.Text = "오버레이 제어판";
