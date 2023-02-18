@@ -138,6 +138,7 @@ namespace FestaGameOverlay
             UpdateTimerControlButton();
 
             Program.TimeLeft = !int.TryParse(TimerInitValue.Text, out int ParsedValue) ? 30 : ParsedValue;
+            Program.OpenedOverlay?.SetTimerText();
         }
 
         private void EnableTimer_Click(object sender, EventArgs e)

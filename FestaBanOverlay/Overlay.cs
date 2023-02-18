@@ -95,6 +95,11 @@ namespace FestaBanOverlay
             }
         }
 
+        public void SetTimerText()
+        {
+            TimeLeft.Text = Program.TimeLeft <= 0 ? "" : Program.TimeLeft.ToString();
+        }
+
         private void Timer_Tick(object sender, EventArgs args)
         {
             if (!Program.TimerEnabled)
@@ -102,15 +107,12 @@ namespace FestaBanOverlay
                 return;
             }
 
-            if (Program.TimeLeft <= 0)
-            {
-                TimeLeft.Text = "";
-            }
-            else
+            if (Program.TimeLeft > 0)
             {
                 Program.TimeLeft -= 1;
-                TimeLeft.Text = Program.TimeLeft.ToString();
             }
+
+            SetTimerText();
         }
     }
 }
