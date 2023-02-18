@@ -208,7 +208,7 @@
             this.TimeLeft.Name = "TimeLeft";
             this.TimeLeft.Size = new System.Drawing.Size(178, 200);
             this.TimeLeft.TabIndex = 13;
-            this.TimeLeft.Text = "60";
+            this.TimeLeft.Text = "30";
             this.TimeLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Overlay

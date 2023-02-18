@@ -375,7 +375,7 @@ namespace FestaGameOverlay
             this.TimerInitValue.Name = "TimerInitValue";
             this.TimerInitValue.Size = new System.Drawing.Size(66, 31);
             this.TimerInitValue.TabIndex = 55;
-            this.TimerInitValue.Text = "60";
+            this.TimerInitValue.Text = "30";
             // 
             // label1
             // 

@@ -27,7 +27,7 @@ namespace FestaBanOverlay
         public static bool IsBanMode = false;
 
         public static bool TimerEnabled = false;
-        public static int TimeLeft = 60;
+        public static int TimeLeft = 30;
 
         [STAThread]
         private static void Main()
